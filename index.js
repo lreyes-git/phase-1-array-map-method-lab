@@ -21,10 +21,10 @@ const titleCased = tutorials.map(function(element) {
 })
 */
 
-const titleCased = function(array) {
+const titleCased = function() {
   //debugger;
   const newArr = [];
-  array.map(function(element) {
+  tutorials.map(function(element) {
     const words = element.split(" ");
     //debugger;
     const capitalizer = words.map(function(word) {
@@ -36,4 +36,4 @@ const titleCased = function(array) {
   return newArr;
 }
 
-console.log(titleCased(tutorials));
+//console.log(titleCased());
